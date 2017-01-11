@@ -7,20 +7,41 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+class PlayFieldViewController: UIViewController , MKMapViewDelegate  {
 
-class PlayFieldViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var showFieldsImage: RoundRectView!
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
 
-        // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self 
+        let location = CLLocationCoordinate2DMake(24.774265, 46.738586)
+        let span  = MKCoordinateSpanMake(1,1)
+        let region = MKCoordinateRegion(center: location, span: span)
+        mapView.setRegion(region, animated: true)
+        
+        let reyad =  PinAnnotation(title: "ryad", info: "PlayGround 1", Coord: location)
+
+        mapView.addAnnotation(reyad)
+        }
+       // Then in CLLocationManagerDelegate method you can get user's current location coord
+
+
+    @IBAction func BookNowBtnAct(_ sender: UIButton) {
     }
     
+    @IBAction func showFieldsImagesBtnAct(_ sender: UIButton) {
+    }
 
     /*
     // MARK: - Navigation

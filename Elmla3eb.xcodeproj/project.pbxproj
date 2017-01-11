@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		12050C4C76B1B58D5276B25D /* Pods_Elmla3eb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD10A2033D8A3CBCE2B698 /* Pods_Elmla3eb.framework */; };
+		7162B71F1E263100003C3206 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B71E1E263100003C3206 /* PinAnnotation.swift */; };
+		7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7221E263DB3003C3206 /* MaterialView.swift */; };
+		7162B7251E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */; };
+		7162B7271E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */; };
+		7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */; };
 		71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */; };
 		71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */; };
 		71F5FAA91E24C14000BD1F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5FAA71E24C14000BD1F83 /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 		1B5CA1DB848E9C92DCAF236C /* Pods-Elmla3eb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elmla3eb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elmla3eb/Pods-Elmla3eb.debug.xcconfig"; sourceTree = "<group>"; };
 		30DD10A2033D8A3CBCE2B698 /* Pods_Elmla3eb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elmla3eb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3F71405FE3747D43A56C93 /* Pods-Elmla3eb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elmla3eb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elmla3eb/Pods-Elmla3eb.release.xcconfig"; sourceTree = "<group>"; };
+		7162B71E1E263100003C3206 /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		7162B7221E263DB3003C3206 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFieldDaysOfWeekCollectionViewCell.swift; sourceTree = "<group>"; };
+		7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFieldDaysOfWeekTableViewCell.swift; sourceTree = "<group>"; };
+		7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPlayFieldViewController.swift; sourceTree = "<group>"; };
 		71F5FAA01E24C14000BD1F83 /* Elmla3eb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elmla3eb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +78,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7162B7281E265DF9003C3206 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				7162B7291E265E05003C3206 /* PlayFieldViewControllerCells  */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		7162B7291E265E05003C3206 /* PlayFieldViewControllerCells  */ = {
+			isa = PBXGroup;
+			children = (
+				7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */,
+				7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */,
+			);
+			name = "PlayFieldViewControllerCells ";
+			sourceTree = "<group>";
+		};
+		7162B72A1E265E92003C3206 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */,
+				71F5FABD1E24E9BA00BD1F83 /* SigninViewController.swift */,
+				71F5FAB51E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift */,
+				7162B72B1E265E9A003C3206 /* PlayFieldViewController */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		7162B72B1E265E9A003C3206 /* PlayFieldViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71F5FAD21E250E1000BD1F83 /* PlayFieldViewController.swift */,
+				7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */,
+			);
+			name = PlayFieldViewController;
+			sourceTree = "<group>";
+		};
 		71F5FA971E24C14000BD1F83 = {
 			isa = PBXGroup;
 			children = (
@@ -90,10 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */,
-				71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */,
-				71F5FABD1E24E9BA00BD1F83 /* SigninViewController.swift */,
-				71F5FAB51E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift */,
-				71F5FAD21E250E1000BD1F83 /* PlayFieldViewController.swift */,
+				7162B72A1E265E92003C3206 /* C */,
+				7162B7281E265DF9003C3206 /* V */,
+				7162B71E1E263100003C3206 /* PinAnnotation.swift */,
 				71F5FAD11E250DD800BD1F83 /* 3rd Part help */,
 				71F5FAAA1E24C14000BD1F83 /* Assets.xcassets */,
 				71F5FAA71E24C14000BD1F83 /* Main.storyboard */,
@@ -122,6 +168,7 @@
 		71F5FAD11E250DD800BD1F83 /* 3rd Part help */ = {
 			isa = PBXGroup;
 			children = (
+				7162B7221E263DB3003C3206 /* MaterialView.swift */,
 				71F5FABB1E24DC8000BD1F83 /* Extensions.swift */,
 				71F5FAB91E24D68C00BD1F83 /* DatePickerDialog.swift */,
 			);
@@ -280,8 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7162B71F1E263100003C3206 /* PinAnnotation.swift in Sources */,
 				71F5FABE1E24E9BA00BD1F83 /* SigninViewController.swift in Sources */,
 				71F5FACB1E24F31100BD1F83 /* Colors.swift in Sources */,
+				7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */,
 				71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */,
 				71F5FABC1E24DC8000BD1F83 /* Extensions.swift in Sources */,
 				71F5FACC1E24F31100BD1F83 /* FCAlertView.swift in Sources */,
@@ -289,7 +338,10 @@
 				71F5FACD1E24F31100BD1F83 /* FCAlertViewDelegate.swift in Sources */,
 				71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */,
 				71F5FAB61E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift in Sources */,
+				7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */,
 				71F5FABA1E24D68C00BD1F83 /* DatePickerDialog.swift in Sources */,
+				7162B7271E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift in Sources */,
+				7162B7251E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
