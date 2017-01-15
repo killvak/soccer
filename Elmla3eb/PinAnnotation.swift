@@ -14,10 +14,12 @@ class PinAnnotation : NSObject , MKAnnotation {
     var subtitle: String?
     var coordinate: CLLocationCoordinate2D
 
-    init(title:String,info:String,Coord:CLLocationCoordinate2D) {
+    var fieldID  : Int
+    init(title:String,info:String,Coord:CLLocationCoordinate2D , fieldId : Int) {
         
         self.title = title
         self.subtitle = info
         self.coordinate = Coord
+        self.fieldID = fieldId
     }
 }

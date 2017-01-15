@@ -1,0 +1,225 @@
+
+/* Class = "UILabel"; text = "العنوان :"; ObjectID = "031-QH-LYT"; */
+"031-QH-LYT.text" = "العنوان :";
+
+/* Class = "UILabel"; text = "12:01 am"; ObjectID = "0Fa-3t-qCg"; */
+"0Fa-3t-qCg.text" = "12:01 am";
+
+/* Class = "UIButton"; normalTitle = "إحجز الآن"; ObjectID = "0a6-KI-YWP"; */
+"0a6-KI-YWP.normalTitle" = "إحجز الآن";
+
+/* Class = "UILabel"; text = "تاريخ الميلاد"; ObjectID = "0fd-sU-USq"; */
+"0fd-sU-USq.text" = "تاريخ الميلاد";
+
+/* Class = "UILabel"; text = "33"; ObjectID = "0vO-Z9-NbL"; */
+"0vO-Z9-NbL.text" = "33";
+
+/* Class = "UILabel"; text = "١ "; ObjectID = "15U-Rd-UXh"; */
+"15U-Rd-UXh.text" = "١ ";
+
+/* Class = "UILabel"; text = "نجيلة"; ObjectID = "2aM-bn-h23"; */
+"2aM-bn-h23.text" = "نجيلة";
+
+/* Class = "UIButton"; normalTitle = "تسجيل الدخول"; ObjectID = "4mJ-Lb-bJT"; */
+"4mJ-Lb-bJT.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "من الساعة :"; ObjectID = "4xy-I1-XCq"; */
+"4xy-I1-XCq.text" = "من الساعة :";
+
+/* Class = "UILabel"; text = " ملعب الأكاديمية ٢"; ObjectID = "53y-qm-gcw"; */
+"53y-qm-gcw.text" = " ملعب الأكاديمية ٢";
+
+/* Class = "UILabel"; text = "سعر الملعب بالساعة :"; ObjectID = "6Go-ih-3Lz"; */
+"6Go-ih-3Lz.text" = "سعر الملعب بالساعة :";
+
+/* Class = "UILabel"; text = "البريد الإلكتروني"; ObjectID = "6Nm-a3-eN5"; */
+"6Nm-a3-eN5.text" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "١٠٠ ريال"; ObjectID = "6ak-rG-nbG"; */
+"6ak-rG-nbG.text" = "١٠٠ ريال";
+
+/* Class = "UILabel"; text = "توفير تقسيمة : "; ObjectID = "7IS-g7-Eoi"; */
+"7IS-g7-Eoi.text" = "توفير تقسيمة : ";
+
+/* Class = "UILabel"; text = "السعر :"; ObjectID = "91M-NJ-Cjq"; */
+"91M-NJ-Cjq.text" = "السعر :";
+
+/* Class = "UILabel"; text = "معلومات عن الملعب "; ObjectID = "9Ea-T2-trF"; */
+"9Ea-T2-trF.text" = "معلومات عن الملعب ";
+
+/* Class = "UILabel"; text = "11:01 pm"; ObjectID = "AYA-T3-lHX"; */
+"AYA-T3-lHX.text" = "11:01 pm";
+
+/* Class = "UILabel"; text = "الإسم كامل"; ObjectID = "Azj-2i-EsW"; */
+"Azj-2i-EsW.text" = "الإسم كامل";
+
+/* Class = "UILabel"; text = "نعم"; ObjectID = "BcW-9x-R0W"; */
+"BcW-9x-R0W.text" = "نعم";
+
+/* Class = "UIButton"; normalTitle = "El Mala3eb"; ObjectID = "Bz5-CC-P9b"; */
+"Bz5-CC-P9b.normalTitle" = "El Mala3eb";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "Dow-v1-iP1"; */
+"Dow-v1-iP1.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "زائر"; ObjectID = "EFR-xY-wEc"; */
+"EFR-xY-wEc.text" = "زائر";
+
+/* Class = "UILabel"; text = "مكة المكرمة"; ObjectID = "ENn-ov-flH"; */
+"ENn-ov-flH.text" = "مكة المكرمة";
+
+/* Class = "UITextField"; placeholder = "لا تقل عن ٦ احرف"; ObjectID = "F3n-Zb-xBZ"; */
+"F3n-Zb-xBZ.placeholder" = "لا تقل عن ٦ احرف";
+
+/* Class = "UILabel"; text = "٤٠٠ ريال"; ObjectID = "FKv-SE-2zV"; */
+"FKv-SE-2zV.text" = "٤٠٠ ريال";
+
+/* Class = "UILabel"; text = "متواجدين الآن"; ObjectID = "FMS-Af-bg2"; */
+"FMS-Af-bg2.text" = "متواجدين الآن";
+
+/* Class = "UILabel"; text = "الأكثر حجزاً :"; ObjectID = "Fec-uA-7oe"; */
+"Fec-uA-7oe.text" = "الأكثر حجزاً :";
+
+/* Class = "UILabel"; text = "المدينة , الحي الثالث"; ObjectID = "G47-Ow-DNe"; */
+"G47-Ow-DNe.text" = "المدينة , الحي الثالث";
+
+/* Class = "UITextField"; placeholder = "مطابقة كلمة المرور"; ObjectID = "GNI-Cb-B02"; */
+"GNI-Cb-B02.placeholder" = "مطابقة كلمة المرور";
+
+/* Class = "UILabel"; text = "١٤"; ObjectID = "JSI-J1-o9p"; */
+"JSI-J1-o9p.text" = "١٤";
+
+/* Class = "UIButton"; normalTitle = "Signin"; ObjectID = "JgD-mZ-vTi"; */
+"JgD-mZ-vTi.normalTitle" = "Signin";
+
+/* Class = "UILabel"; text = "300 ريال"; ObjectID = "Jsd-R0-8z5"; */
+"Jsd-R0-8z5.text" = "300 ريال";
+
+/* Class = "UILabel"; text = "رقم الجوال"; ObjectID = "Kjf-eN-0aO"; */
+"Kjf-eN-0aO.text" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "الحي"; ObjectID = "LwW-XR-bQr"; */
+"LwW-XR-bQr.text" = "الحي";
+
+/* Class = "UIButton"; normalTitle = "عرض صور للملعب"; ObjectID = "NMH-aX-hmc"; */
+"NMH-aX-hmc.normalTitle" = "عرض صور للملعب";
+
+/* Class = "UILabel"; text = "عدد الملاعب : "; ObjectID = "NU2-S7-WZ6"; */
+"NU2-S7-WZ6.text" = "عدد الملاعب : ";
+
+/* Class = "UITextField"; placeholder = "example@example.com"; ObjectID = "OGd-8u-tYz"; */
+"OGd-8u-tYz.placeholder" = "example@example.com";
+
+/* Class = "UILabel"; text = "المدن و الملاعب :"; ObjectID = "OP5-6E-YZo"; */
+"OP5-6E-YZo.text" = "المدن و الملاعب :";
+
+/* Class = "UIButton"; normalTitle = "Home"; ObjectID = "OsQ-1Q-7wW"; */
+"OsQ-1Q-7wW.normalTitle" = "Home";
+
+/* Class = "UILabel"; text = "Field name"; ObjectID = "PNS-OY-Y4y"; */
+"PNS-OY-Y4y.text" = "Field name";
+
+/* Class = "UILabel"; text = "السبت"; ObjectID = "Pyb-TO-c3r"; */
+"Pyb-TO-c3r.text" = "السبت";
+
+/* Class = "UITextField"; placeholder = "الإسم الثلاثي"; ObjectID = "QJQ-tI-yHU"; */
+"QJQ-tI-yHU.placeholder" = "الإسم الثلاثي";
+
+/* Class = "UILabel"; text = "الملاعب المضافة مؤخراً :"; ObjectID = "Qzo-Aa-I0P"; */
+"Qzo-Aa-I0P.text" = "الملاعب المضافة مؤخراً :";
+
+/* Class = "UILabel"; text = "تأكيد كلمة المرور"; ObjectID = "TcU-Ek-yVe"; */
+"TcU-Ek-yVe.text" = "تأكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "المدينة"; ObjectID = "ViE-cR-rze"; */
+"ViE-cR-rze.text" = "المدينة";
+
+/* Class = "UILabel"; text = "ملعب"; ObjectID = "Vj4-82-MpM"; */
+"Vj4-82-MpM.text" = "ملعب";
+
+/* Class = "UILabel"; text = "توفير كرة : "; ObjectID = "Vx8-LP-v9L"; */
+"Vx8-LP-v9L.text" = "توفير كرة : ";
+
+/* Class = "UILabel"; text = "نعم"; ObjectID = "X0k-Ql-Rgt"; */
+"X0k-Ql-Rgt.text" = "نعم";
+
+/* Class = "UILabel"; text = "نوع الأرضية :"; ObjectID = "XbQ-Ht-DLd"; */
+"XbQ-Ht-DLd.text" = "نوع الأرضية :";
+
+/* Class = "UILabel"; text = "99"; ObjectID = "Yaq-mF-Ccu"; */
+"Yaq-mF-Ccu.text" = "99";
+
+/* Class = "UILabel"; text = "الرياض"; ObjectID = "Zcr-Qh-v4P"; */
+"Zcr-Qh-v4P.text" = "الرياض";
+
+/* Class = "UILabel"; text = "ملاعب الأكاديمية فى مدينة"; ObjectID = "b8X-Yo-F8U"; */
+"b8X-Yo-F8U.text" = "ملاعب الأكاديمية فى مدينة";
+
+/* Class = "UILabel"; text = "عدد مرات الحجز :"; ObjectID = "bhP-bB-fQ0"; */
+"bhP-bB-fQ0.text" = "عدد مرات الحجز :";
+
+/* Class = "UILabel"; text = "توفير الإضاءة : "; ObjectID = "c5y-dp-Ubb"; */
+"c5y-dp-Ubb.text" = "توفير الإضاءة : ";
+
+/* Class = "UILabel"; text = "من الساعة :"; ObjectID = "c8b-SE-IXm"; */
+"c8b-SE-IXm.text" = "من الساعة :";
+
+/* Class = "UILabel"; text = "حجز"; ObjectID = "dI3-AN-wuK"; */
+"dI3-AN-wuK.text" = "حجز";
+
+/* Class = "UILabel"; text = "البريد الإلكتروني"; ObjectID = "dzC-fa-GpI"; */
+"dzC-fa-GpI.text" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "101"; ObjectID = "eGS-Dl-GHD"; */
+"eGS-Dl-GHD.text" = "101";
+
+/* Class = "UITextField"; placeholder = "+٩٦٦"; ObjectID = "eUh-gq-WKL"; */
+"eUh-gq-WKL.placeholder" = "+٩٦٦";
+
+/* Class = "UILabel"; text = "من الساعة :"; ObjectID = "h9r-c5-6oe"; */
+"h9r-c5-6oe.text" = "من الساعة :";
+
+/* Class = "UIButton"; normalTitle = "تسجيل الحساب"; ObjectID = "ifp-k0-4DA"; */
+"ifp-k0-4DA.normalTitle" = "تسجيل الحساب";
+
+/* Class = "UILabel"; text = "١٢ ملعب"; ObjectID = "ioi-P3-KcY"; */
+"ioi-P3-KcY.text" = "١٢ ملعب";
+
+/* Class = "UILabel"; text = "التقييم :"; ObjectID = "kDs-LO-rHp"; */
+"kDs-LO-rHp.text" = "التقييم :";
+
+/* Class = "UILabel"; text = "مواعيد الملعب"; ObjectID = "lSi-lc-rrK"; */
+"lSi-lc-rrK.text" = "مواعيد الملعب";
+
+/* Class = "UILabel"; text = "كلمة المرور"; ObjectID = "lXV-yq-TNk"; */
+"lXV-yq-TNk.text" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "example@example.com"; ObjectID = "lbc-uH-6T0"; */
+"lbc-uH-6T0.placeholder" = "example@example.com";
+
+/* Class = "UILabel"; text = "٤ , شارع الثان بن الاول"; ObjectID = "lgJ-NR-BBD"; */
+"lgJ-NR-BBD.text" = "٤ , شارع الثان بن الاول";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور٫٫٫"; ObjectID = "mst-wy-fBQ"; */
+"mst-wy-fBQ.placeholder" = "كلمة المرور٫٫٫";
+
+/* Class = "UILabel"; text = "53"; ObjectID = "nx0-HI-ggc"; */
+"nx0-HI-ggc.text" = "53";
+
+/* Class = "UILabel"; text = "لا"; ObjectID = "oVZ-dY-e00"; */
+"oVZ-dY-e00.text" = "لا";
+
+/* Class = "UILabel"; text = "إسم الملعب :"; ObjectID = "peZ-6u-Wip"; */
+"peZ-6u-Wip.text" = "إسم الملعب :";
+
+/* Class = "UILabel"; text = "4.2"; ObjectID = "qwS-gE-rz4"; */
+"qwS-gE-rz4.text" = "4.2";
+
+/* Class = "UILabel"; text = "كلمة المرور"; ObjectID = "xUJ-aH-Mbg"; */
+"xUJ-aH-Mbg.text" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "المدينة..."; ObjectID = "zHz-Wi-kOK"; */
+"zHz-Wi-kOK.placeholder" = "المدينة...";
+
+/* Class = "UITextField"; placeholder = "الحي..."; ObjectID = "zn9-4b-l0Y"; */
+"zn9-4b-l0Y.placeholder" = "الحي...";

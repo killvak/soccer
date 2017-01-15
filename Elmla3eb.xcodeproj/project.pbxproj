@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		12050C4C76B1B58D5276B25D /* Pods_Elmla3eb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD10A2033D8A3CBCE2B698 /* Pods_Elmla3eb.framework */; };
+		715B892D1E2ADD10000804EA /* FieldsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B892C1E2ADD10000804EA /* FieldsMap.swift */; };
 		7162B71F1E263100003C3206 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B71E1E263100003C3206 /* PinAnnotation.swift */; };
 		7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7221E263DB3003C3206 /* MaterialView.swift */; };
 		7162B7251E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */; };
 		7162B7271E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */; };
 		7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */; };
+		716728581E2B6B8600C32F59 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716728571E2B6B8600C32F59 /* SWRevealViewController.m */; };
+		7167285A1E2B706C00C32F59 /* ExtRevealSieMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716728591E2B706C00C32F59 /* ExtRevealSieMenu.swift */; };
+		7167285C1E2B788000C32F59 /* sideMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167285B1E2B788000C32F59 /* sideMenuTableView.swift */; };
+		7167285E1E2B96D100C32F59 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167285D1E2B96D100C32F59 /* SearchViewController.swift */; };
+		716728611E2B98E000C32F59 /* ExtRegisterDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716728601E2B98E000C32F59 /* ExtRegisterDatePicker.swift */; };
+		716728631E2BA8DD00C32F59 /* ExtSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716728621E2BA8DD00C32F59 /* ExtSearchVC.swift */; };
 		71B52C6D1E2778B600E2BFFA /* AukDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6A1E2778B600E2BFFA /* AukDistrib.swift */; };
 		71B52C6E1E2778B600E2BFFA /* ScrollViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6B1E2778B600E2BFFA /* ScrollViewEx.swift */; };
 		71B52C6F1E2778B600E2BFFA /* MoaDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6C1E2778B600E2BFFA /* MoaDistrib.swift */; };
@@ -29,6 +36,9 @@
 		71B52C871E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C861E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift */; };
 		71B52C8A1E27AA6700E2BFFA /* ExtHPCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C891E27AA6700E2BFFA /* ExtHPCollectionDelegate.swift */; };
 		71B52C8C1E27AA7800E2BFFA /* ExtHPCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8B1E27AA7800E2BFFA /* ExtHPCollectionDataSource.swift */; };
+		71B52C911E27CF6E00E2BFFA /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8D1E27CF6E00E2BFFA /* L012Localizer.swift */; };
+		71B52C921E27CF6E00E2BFFA /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8E1E27CF6E00E2BFFA /* L102Language.swift */; };
+		71B52C931E27CF6E00E2BFFA /* MirroringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8F1E27CF6E00E2BFFA /* MirroringLabel.swift */; };
 		71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */; };
 		71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */; };
 		71F5FAA91E24C14000BD1F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5FAA71E24C14000BD1F83 /* Main.storyboard */; };
@@ -53,11 +63,20 @@
 		1B5CA1DB848E9C92DCAF236C /* Pods-Elmla3eb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elmla3eb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elmla3eb/Pods-Elmla3eb.debug.xcconfig"; sourceTree = "<group>"; };
 		30DD10A2033D8A3CBCE2B698 /* Pods_Elmla3eb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elmla3eb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3F71405FE3747D43A56C93 /* Pods-Elmla3eb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elmla3eb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elmla3eb/Pods-Elmla3eb.release.xcconfig"; sourceTree = "<group>"; };
+		715B892C1E2ADD10000804EA /* FieldsMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMap.swift; sourceTree = "<group>"; };
 		7162B71E1E263100003C3206 /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		7162B7221E263DB3003C3206 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFieldDaysOfWeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFieldDaysOfWeekTableViewCell.swift; sourceTree = "<group>"; };
 		7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPlayFieldViewController.swift; sourceTree = "<group>"; };
+		716728521E2B6AD500C32F59 /* Elmla3eb-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Elmla3eb-Bridging-Header.h"; sourceTree = "<group>"; };
+		716728561E2B6B8600C32F59 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		716728571E2B6B8600C32F59 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		716728591E2B706C00C32F59 /* ExtRevealSieMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtRevealSieMenu.swift; sourceTree = "<group>"; };
+		7167285B1E2B788000C32F59 /* sideMenuTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenuTableView.swift; sourceTree = "<group>"; };
+		7167285D1E2B96D100C32F59 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		716728601E2B98E000C32F59 /* ExtRegisterDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtRegisterDatePicker.swift; sourceTree = "<group>"; };
+		716728621E2BA8DD00C32F59 /* ExtSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtSearchVC.swift; path = ../ExtSearchVC.swift; sourceTree = "<group>"; };
 		71B52C6A1E2778B600E2BFFA /* AukDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AukDistrib.swift; sourceTree = "<group>"; };
 		71B52C6B1E2778B600E2BFFA /* ScrollViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewEx.swift; sourceTree = "<group>"; };
 		71B52C6C1E2778B600E2BFFA /* MoaDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoaDistrib.swift; sourceTree = "<group>"; };
@@ -74,6 +93,11 @@
 		71B52C861E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesAndFieldsCollectionViewCell.swift; sourceTree = "<group>"; };
 		71B52C891E27AA6700E2BFFA /* ExtHPCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtHPCollectionDelegate.swift; sourceTree = "<group>"; };
 		71B52C8B1E27AA7800E2BFFA /* ExtHPCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtHPCollectionDataSource.swift; sourceTree = "<group>"; };
+		71B52C8D1E27CF6E00E2BFFA /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
+		71B52C8E1E27CF6E00E2BFFA /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
+		71B52C8F1E27CF6E00E2BFFA /* MirroringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringLabel.swift; sourceTree = "<group>"; };
+		71B52C951E27CFEB00E2BFFA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		71B52C9B1E27D16900E2BFFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		71F5FAA01E24C14000BD1F83 /* Elmla3eb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elmla3eb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +137,7 @@
 		7162B7281E265DF9003C3206 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				7162B71E1E263100003C3206 /* PinAnnotation.swift */,
 				71B52C881E27A96000E2BFFA /* HomeVC Cells */,
 				7162B7291E265E05003C3206 /* PlayFieldViewControllerCells  */,
 			);
@@ -133,9 +158,11 @@
 		7162B72A1E265E92003C3206 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */,
+				7167285F1E2B98B600C32F59 /* Register */,
 				71F5FABD1E24E9BA00BD1F83 /* SigninViewController.swift */,
-				71F5FAB51E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift */,
+				715B892C1E2ADD10000804EA /* FieldsMap.swift */,
+				7167285D1E2B96D100C32F59 /* SearchViewController.swift */,
+				716728621E2BA8DD00C32F59 /* ExtSearchVC.swift */,
 				71B52C7B1E27814200E2BFFA /* HomePage */,
 				7162B72B1E265E9A003C3206 /* PlayFieldViewController */,
 			);
@@ -149,6 +176,16 @@
 				7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */,
 			);
 			name = PlayFieldViewController;
+			sourceTree = "<group>";
+		};
+		7167285F1E2B98B600C32F59 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */,
+				71F5FAB51E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift */,
+				716728601E2B98E000C32F59 /* ExtRegisterDatePicker.swift */,
+			);
+			name = Register;
 			sourceTree = "<group>";
 		};
 		71B52C701E277D8800E2BFFA /* Assets */ = {
@@ -169,6 +206,7 @@
 				71B52C7C1E27815B00E2BFFA /* ExtHomePAuk.swift */,
 				71B52C891E27AA6700E2BFFA /* ExtHPCollectionDelegate.swift */,
 				71B52C8B1E27AA7800E2BFFA /* ExtHPCollectionDataSource.swift */,
+				716728591E2B706C00C32F59 /* ExtRevealSieMenu.swift */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -181,6 +219,17 @@
 				71B52C861E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift */,
 			);
 			name = "HomeVC Cells";
+			sourceTree = "<group>";
+		};
+		71B52C901E27CF6E00E2BFFA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				71B52C8D1E27CF6E00E2BFFA /* L012Localizer.swift */,
+				71B52C8E1E27CF6E00E2BFFA /* L102Language.swift */,
+				71B52C8F1E27CF6E00E2BFFA /* MirroringLabel.swift */,
+			);
+			name = Localization;
+			path = "../../../HyperApp /HyperApp";
 			sourceTree = "<group>";
 		};
 		71F5FA971E24C14000BD1F83 = {
@@ -205,9 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */,
+				71B52C901E27CF6E00E2BFFA /* Localization */,
 				7162B72A1E265E92003C3206 /* C */,
 				7162B7281E265DF9003C3206 /* V */,
-				7162B71E1E263100003C3206 /* PinAnnotation.swift */,
 				71F5FAD11E250DD800BD1F83 /* 3rd Part help */,
 				71F5FAAA1E24C14000BD1F83 /* Assets.xcassets */,
 				71B52C701E277D8800E2BFFA /* Assets */,
@@ -230,6 +279,7 @@
 				71F5FAC51E24F31100BD1F83 /* FCAlertView.swift */,
 				71F5FAC61E24F31100BD1F83 /* FCAlertViewDelegate.swift */,
 				71F5FAC71E24F31100BD1F83 /* Info.plist */,
+				716728521E2B6AD500C32F59 /* Elmla3eb-Bridging-Header.h */,
 			);
 			path = FCAlertView;
 			sourceTree = "<group>";
@@ -237,12 +287,15 @@
 		71F5FAD11E250DD800BD1F83 /* 3rd Part help */ = {
 			isa = PBXGroup;
 			children = (
+				7167285B1E2B788000C32F59 /* sideMenuTableView.swift */,
 				7162B7221E263DB3003C3206 /* MaterialView.swift */,
 				71F5FABB1E24DC8000BD1F83 /* Extensions.swift */,
 				71F5FAB91E24D68C00BD1F83 /* DatePickerDialog.swift */,
 				71B52C6A1E2778B600E2BFFA /* AukDistrib.swift */,
 				71B52C6B1E2778B600E2BFFA /* ScrollViewEx.swift */,
 				71B52C6C1E2778B600E2BFFA /* MoaDistrib.swift */,
+				716728561E2B6B8600C32F59 /* SWRevealViewController.h */,
+				716728571E2B6B8600C32F59 /* SWRevealViewController.m */,
 			);
 			name = "3rd Part help";
 			sourceTree = "<group>";
@@ -318,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 71F5FA971E24C14000BD1F83;
 			productRefGroup = 71F5FAA11E24C14000BD1F83 /* Products */;
@@ -408,6 +462,8 @@
 				71F5FABE1E24E9BA00BD1F83 /* SigninViewController.swift in Sources */,
 				71F5FACB1E24F31100BD1F83 /* Colors.swift in Sources */,
 				71B52C801E278E0300E2BFFA /* CitiesAndPlayFieldsCollectionViewCell.swift in Sources */,
+				71B52C931E27CF6E00E2BFFA /* MirroringLabel.swift in Sources */,
+				7167285C1E2B788000C32F59 /* sideMenuTableView.swift in Sources */,
 				71B52C871E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift in Sources */,
 				7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */,
 				71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */,
@@ -417,17 +473,25 @@
 				71B52C8C1E27AA7800E2BFFA /* ExtHPCollectionDataSource.swift in Sources */,
 				71F5FACC1E24F31100BD1F83 /* FCAlertView.swift in Sources */,
 				71B52C6E1E2778B600E2BFFA /* ScrollViewEx.swift in Sources */,
+				716728611E2B98E000C32F59 /* ExtRegisterDatePicker.swift in Sources */,
 				71F5FAD31E250E1000BD1F83 /* PlayFieldViewController.swift in Sources */,
 				71F5FACD1E24F31100BD1F83 /* FCAlertViewDelegate.swift in Sources */,
 				71B52C851E27A73700E2BFFA /* MostBookedCollectionViewCell.swift in Sources */,
 				71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */,
+				716728631E2BA8DD00C32F59 /* ExtSearchVC.swift in Sources */,
 				71F5FAB61E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift in Sources */,
+				7167285E1E2B96D100C32F59 /* SearchViewController.swift in Sources */,
 				7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */,
+				71B52C911E27CF6E00E2BFFA /* L012Localizer.swift in Sources */,
+				71B52C921E27CF6E00E2BFFA /* L102Language.swift in Sources */,
 				71F5FABA1E24D68C00BD1F83 /* DatePickerDialog.swift in Sources */,
+				7167285A1E2B706C00C32F59 /* ExtRevealSieMenu.swift in Sources */,
 				71B52C6D1E2778B600E2BFFA /* AukDistrib.swift in Sources */,
+				716728581E2B6B8600C32F59 /* SWRevealViewController.m in Sources */,
 				71B52C6F1E2778B600E2BFFA /* MoaDistrib.swift in Sources */,
 				7162B7271E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift in Sources */,
 				7162B7251E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift in Sources */,
+				715B892D1E2ADD10000804EA /* FieldsMap.swift in Sources */,
 				71B52C7A1E27807700E2BFFA /* HomePageViewController.swift in Sources */,
 				71B52C7D1E27815B00E2BFFA /* ExtHomePAuk.swift in Sources */,
 			);
@@ -440,6 +504,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				71F5FAA81E24C14000BD1F83 /* Base */,
+				71B52C9B1E27D16900E2BFFA /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -448,6 +513,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				71F5FAAD1E24C14000BD1F83 /* Base */,
+				71B52C951E27CFEB00E2BFFA /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -459,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -509,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -553,12 +621,15 @@
 			baseConfigurationReference = 1B5CA1DB848E9C92DCAF236C /* Pods-Elmla3eb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YKSLKY2D83;
 				INFOPLIST_FILE = Elmla3eb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppsSqaure.Elmla3eb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Elmla3eb/FCAlertView/Elmla3eb-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -568,12 +639,14 @@
 			baseConfigurationReference = 5A3F71405FE3747D43A56C93 /* Pods-Elmla3eb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YKSLKY2D83;
 				INFOPLIST_FILE = Elmla3eb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppsSqaure.Elmla3eb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Elmla3eb/FCAlertView/Elmla3eb-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

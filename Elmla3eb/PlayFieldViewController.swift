@@ -30,7 +30,7 @@ class PlayFieldViewController: UIViewController , MKMapViewDelegate  {
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         
-        let reyad =  PinAnnotation(title: "ryad", info: "PlayGround 1", Coord: location)
+        let reyad =  PinAnnotation(title: "ryad", info: "PlayGround 1", Coord: location,fieldId : 1 )
 
         mapView.addAnnotation(reyad)
         }

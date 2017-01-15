@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A5B1474844E38C841135565007554709FF6E3A8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7921C3EF90730316744C3118DA5F398813979122" : 9223372036854775807,
+    "A5B1474844E38C841135565007554709FF6E3A8F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "92C9EC45-6A1D-47D4-B5FC-2734D8562137",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7921C3EF90730316744C3118DA5F398813979122" : "..\/HyperApp%20",
+    "A5B1474844E38C841135565007554709FF6E3A8F" : "Elmla3eb\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Elmla3eb",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Elmla3eb.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RyuuSenpai\/TestGit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7921C3EF90730316744C3118DA5F398813979122"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com-killvak:killvak\/soccer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5B1474844E38C841135565007554709FF6E3A8F"
+    }
+  ]
+}
