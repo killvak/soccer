@@ -113,6 +113,10 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
         }
     }
 
+    @IBAction func dismissViewButton(_ sender: UIButton) {
+    
+        dismiss(animated:true,completion:nil)
+    }
     
     
 //    func checkTextCount(text : String?) -> ( String , Bool) {

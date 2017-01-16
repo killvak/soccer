@@ -23,7 +23,7 @@ class  sideMenuTableView : UIViewController, UITableViewDelegate , UITableViewDa
         
        tableView.delegate = self
         tableView.dataSource = self
-        SeugeIdArray = ["Home" , "SFields" , "search"]
+        SeugeIdArray = ["Home" , "SFields" , "search", "fields"]
         
         
 

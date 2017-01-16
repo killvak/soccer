@@ -34,6 +34,9 @@ class SigninViewController: UIViewController {
 
     }
 
+    @IBAction func dismissViewBtnAct(_ sender: UIButton) {
+        dismiss(animated:true,completion:nil)
+    }
     
 
     /*

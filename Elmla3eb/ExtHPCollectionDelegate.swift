@@ -30,6 +30,8 @@ extension HomePageViewController : UICollectionViewDelegate , UICollectionViewDe
         default:
             print("error picking collectionView in didSelectItemAt")
         }
+        let x = self.storyboard?.instantiateViewController(withIdentifier: "PlayFieldViewController") as! PlayFieldViewController
+        navigationController?.pushViewController(x, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

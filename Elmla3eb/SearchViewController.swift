@@ -17,7 +17,7 @@ class SearchViewController: UIViewController  , UITextFieldDelegate{
     
     var gradePicker: UIPickerView!
     
-    let gradePickerValues = ["5. Klasse", "6. Klasse", "7. Klasse"]
+    let gradePickerValues = ["الكل","الرياض","جدة","المدينة","الدمام","عرعر","خميس مشيط","القصيم","الخرج"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
