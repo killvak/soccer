@@ -20,8 +20,24 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var birthDateTF: UITextField!
     @IBOutlet weak var cityTF: UITextField!
     @IBOutlet weak var neighborTF: UITextField!
+    @IBOutlet weak var fieldsTypeViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var typeOfFieldsViewOL: UIView!
+    //set selection OutLets 
+    @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var playerLbl: UILabel!
+    @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var coachImage: UIImageView!
+    @IBOutlet weak var coachLbl: UILabel!
+    @IBOutlet weak var coachView: UIView!
+    
+    //
+  
+    let pinkColor = UIColor(colorLiteralRed: 221/255, green: 63/255, blue: 74/255, alpha: 1)
     let registerTFDelegate = RegisterTextFieldDeledate()
+    var checkBoxIndexArray = [Int]()
+    var isFieldOwner = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,8 +49,11 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
         birthDateTF.delegate = self
         cityTF.delegate = registerTFDelegate
         neighborTF.delegate = registerTFDelegate
-      
-        
+      setTypeOfFieldsViewLayout()
+        setIsownerOrPlayerViewLayout()
+        if !isFieldOwner {
+//            self.typeOfFieldsOL.isHidden = true
+        }
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterViewController.dismissKeyboard))
         
@@ -44,6 +63,26 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
         view.addGestureRecognizer(tap)
     }
 
+    func setTypeOfFieldsViewLayout() {
+        self.typeOfFieldsViewOL.layer.cornerRadius  = 15
+        self.typeOfFieldsViewOL.clipsToBounds = true
+        self.typeOfFieldsViewOL.layer.borderWidth = 2
+        self.typeOfFieldsViewOL.layer.borderColor = self.pinkColor.cgColor
+    }
+    
+    func setIsownerOrPlayerViewLayout() {
+        let views = [ playerView,coachView]
+        for i in views {
+        i?.layer.cornerRadius  = 39
+        i?.clipsToBounds = true
+        i?.layer.borderWidth = 2.5
+        }
+        self.playerView.layer.borderColor  = UIColor.white.cgColor
+        self.coachView.layer.borderColor = self.pinkColor.cgColor
+
+
+    }
+    
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
@@ -111,11 +150,92 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
                             withDoneButtonTitle: nil,
                             andButtons: nil)
         }
+
     }
 
     @IBAction func dismissViewButton(_ sender: UIButton) {
     
         dismiss(animated:true,completion:nil)
+    }
+    
+    
+    
+    @IBAction func fieldTypesBtnActioninView(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 0:
+            checkBoxFuncionality(sender: sender)
+            break
+        case 1:
+            checkBoxFuncionality(sender: sender)
+            
+            break
+        case 2:
+            checkBoxFuncionality(sender: sender)
+            break
+        case 3:
+            checkBoxFuncionality(sender: sender)
+            break
+        case 4:
+            checkBoxFuncionality(sender: sender)
+            break
+        default:
+            print("Unknown language")
+            return
+        }
+        print(self.checkBoxIndexArray)
+    }
+    
+    func checkBoxFuncionality(sender : UIButton) {
+        sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            sender.setImage(#imageLiteral(resourceName: "Checked Checkbox 2_d32437_50"), for: UIControlState.selected)
+            self.checkBoxIndexArray.append(sender.tag)
+        }else {
+            sender.setImage(#imageLiteral(resourceName: "Unchecked Checkbox_d32437_50"), for: UIControlState.normal)
+            self.checkBoxIndexArray.remove(sender.tag)
+        }
+    }
+
+    
+    @IBAction func ownerOrPlayerFieldBtnAct(_ sender: UIButton) {
+      
+        switch sender.tag {
+        case 0:
+            playerOrOwner(sender: sender, theView: playerView, Lable: playerLbl,uiImage : playerImage , image : "white_Player")
+            self.coachView.backgroundColor = UIColor.white
+            self.coachLbl.textColor = self.pinkColor
+            self.coachImage.image = UIImage(named: "Coach_d32437_100")
+            self.coachView.layer.borderColor = self.pinkColor.cgColor
+            self.fieldsTypeViewHeight.constant = 0
+            self.typeOfFieldsViewOL.isHidden = true
+
+            break
+        case 1:
+            playerOrOwner(sender: sender, theView: coachView, Lable: coachLbl,uiImage : coachImage , image : "white_Coach")
+            self.playerView.backgroundColor = UIColor.white
+            self.playerLbl.textColor =  self.pinkColor
+            self.playerImage.image = UIImage(named: "pin")
+            self.playerView.layer.borderColor = self.pinkColor.cgColor
+            self.typeOfFieldsViewOL.isHidden = false
+            self.fieldsTypeViewHeight.constant = 136
+            break
+
+        default:
+            print("Unknown language")
+            return
+        }
+        print(self.checkBoxIndexArray)
+    }
+    
+    func playerOrOwner(sender : UIButton , theView : UIView ,Lable : UILabel, uiImage : UIImageView,image : String) {
+            theView.backgroundColor = self.pinkColor
+            Lable.textColor = UIColor.white
+            uiImage.image = UIImage(named : image )
+        theView.layer.borderColor = UIColor.white.cgColor
+
+      
     }
     
     

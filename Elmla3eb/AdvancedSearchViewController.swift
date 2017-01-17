@@ -44,11 +44,17 @@ class AdvancedSearchViewController: UIViewController , UITextFieldDelegate{
         
         fieldTypeTextField.inputView = fieldTypePicker
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+ 
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if  textField == cityTextField ,  cityTextField.text == "" {
+            cityTextField.text = citiesList[0]
+            
+        }else  if  textField == fieldTypeTextField ,  fieldTypeTextField.text == "" {
+            fieldTypeTextField.text = fieldType[0]
+            
+        }
+    }
 
     @IBAction func fieldAdvancedDetailsBtnAction(_ sender: UIButton) {
         
