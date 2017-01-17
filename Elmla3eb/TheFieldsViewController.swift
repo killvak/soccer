@@ -15,6 +15,7 @@ class TheFieldsViewController: UIViewController , UITableViewDelegate , UITableV
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapViewContainer: UIView!
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     let locationManager = CLLocationManager()
     
     var maphasCenteredOnce = false
@@ -25,6 +26,7 @@ class TheFieldsViewController: UIViewController , UITableViewDelegate , UITableV
         tableView.dataSource = self
         mapView.delegate = self
         self.setLocation()
+        revealMenu()
         // Do any additional setup after loading the view.
     }
 

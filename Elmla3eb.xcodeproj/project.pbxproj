@@ -41,6 +41,8 @@
 		71B52C911E27CF6E00E2BFFA /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8D1E27CF6E00E2BFFA /* L012Localizer.swift */; };
 		71B52C921E27CF6E00E2BFFA /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8E1E27CF6E00E2BFFA /* L102Language.swift */; };
 		71B52C931E27CF6E00E2BFFA /* MirroringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C8F1E27CF6E00E2BFFA /* MirroringLabel.swift */; };
+		71C4C0951E2E451D00504071 /* FieldSearchByDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4C0941E2E451D00504071 /* FieldSearchByDateViewController.swift */; };
+		71C4C0971E2E45E100504071 /* SearchFieldByDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4C0961E2E45E100504071 /* SearchFieldByDateTableViewCell.swift */; };
 		71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */; };
 		71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */; };
 		71F5FAA91E24C14000BD1F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5FAA71E24C14000BD1F83 /* Main.storyboard */; };
@@ -101,7 +103,8 @@
 		71B52C8E1E27CF6E00E2BFFA /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		71B52C8F1E27CF6E00E2BFFA /* MirroringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringLabel.swift; sourceTree = "<group>"; };
 		71B52C951E27CFEB00E2BFFA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		71B52C9B1E27D16900E2BFFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		71C4C0941E2E451D00504071 /* FieldSearchByDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSearchByDateViewController.swift; sourceTree = "<group>"; };
+		71C4C0961E2E45E100504071 /* SearchFieldByDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFieldByDateTableViewCell.swift; sourceTree = "<group>"; };
 		71F5FAA01E24C14000BD1F83 /* Elmla3eb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elmla3eb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F5FAA31E24C14000BD1F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F5FAA51E24C14000BD1F83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 		7162B7291E265E05003C3206 /* PlayFieldViewControllerCells  */ = {
 			isa = PBXGroup;
 			children = (
+				71C4C0961E2E45E100504071 /* SearchFieldByDateTableViewCell.swift */,
 				7162B7241E265DD0003C3206 /* PlayFieldDaysOfWeekCollectionViewCell.swift */,
 				712C3BF01E2CE548001BA561 /* TheFieldTableViewCell.swift */,
 				7162B7261E265DF1003C3206 /* PlayFieldDaysOfWeekTableViewCell.swift */,
@@ -188,6 +192,7 @@
 				7162B72E1E265EC7003C3206 /* CVPlayFieldViewController.swift */,
 				712C3BEE1E2CE421001BA561 /* TheFieldsViewController.swift */,
 				712C3BF21E2CEFCC001BA561 /* ExtTheFieldsViewControllerMapView.swift */,
+				71C4C0941E2E451D00504071 /* FieldSearchByDateViewController.swift */,
 			);
 			name = PlayFieldViewController;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				71F5FACC1E24F31100BD1F83 /* FCAlertView.swift in Sources */,
 				71B52C6E1E2778B600E2BFFA /* ScrollViewEx.swift in Sources */,
 				716728611E2B98E000C32F59 /* ExtRegisterDatePicker.swift in Sources */,
+				71C4C0951E2E451D00504071 /* FieldSearchByDateViewController.swift in Sources */,
 				71F5FAD31E250E1000BD1F83 /* PlayFieldViewController.swift in Sources */,
 				71F5FACD1E24F31100BD1F83 /* FCAlertViewDelegate.swift in Sources */,
 				71B52C851E27A73700E2BFFA /* MostBookedCollectionViewCell.swift in Sources */,
@@ -496,6 +502,7 @@
 				716728631E2BA8DD00C32F59 /* ExtPickerViewVC.swift in Sources */,
 				71F5FAB61E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift in Sources */,
 				7167285E1E2B96D100C32F59 /* SearchViewController.swift in Sources */,
+				71C4C0971E2E45E100504071 /* SearchFieldByDateTableViewCell.swift in Sources */,
 				7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */,
 				71B52C911E27CF6E00E2BFFA /* L012Localizer.swift in Sources */,
 				71B52C921E27CF6E00E2BFFA /* L102Language.swift in Sources */,
@@ -520,7 +527,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				71F5FAA81E24C14000BD1F83 /* Base */,
-				71B52C9B1E27D16900E2BFFA /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

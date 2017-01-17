@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class  sideMenuTableView : UIViewController, UITableViewDelegate , UITableViewDataSource {
     
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     var SeugeIdArray = [String()]
     static var profileImage : UIImage?
@@ -23,9 +24,14 @@ class  sideMenuTableView : UIViewController, UITableViewDelegate , UITableViewDa
         
        tableView.delegate = self
         tableView.dataSource = self
-        SeugeIdArray = ["Home" , "SFields" , "search", "fields"]
+        SeugeIdArray = ["Home"  , "search", "fields"]
+
         
-        
+
+        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2
+        self.profileImage.clipsToBounds = true
+        self.profileImage.layer.borderWidth = 3
+        self.profileImage.layer.borderColor = UIColor.white.cgColor
 
 
     }

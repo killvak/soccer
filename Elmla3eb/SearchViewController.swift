@@ -14,6 +14,7 @@ class SearchViewController: UIViewController  , UITextFieldDelegate{
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
     
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     var gradePicker: UIPickerView!
     
@@ -33,6 +34,7 @@ class SearchViewController: UIViewController  , UITextFieldDelegate{
         gradePicker.delegate = self
         
         cityTextField.inputView = gradePicker
+        revealMenu()
     }
 
     override func didReceiveMemoryWarning() {

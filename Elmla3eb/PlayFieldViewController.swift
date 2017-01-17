@@ -38,6 +38,9 @@ class PlayFieldViewController: UIViewController , MKMapViewDelegate  {
 
 
     @IBAction func BookNowBtnAct(_ sender: UIButton) {
+        let x = self.storyboard?.instantiateViewController(withIdentifier: "FieldSearchByDateViewController") as! FieldSearchByDateViewController
+        navigationController?.pushViewController(x, animated: true)
+        
     }
     
     @IBAction func showFieldsImagesBtnAct(_ sender: UIButton) {
