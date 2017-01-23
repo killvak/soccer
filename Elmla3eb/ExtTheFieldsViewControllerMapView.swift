@@ -39,27 +39,27 @@ extension TheFieldsViewController : MKMapViewDelegate , CLLocationManagerDelegat
     }
     
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        }
-    }
+//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+//        if status == .authorizedWhenInUse {
+//            mapView.showsUserLocation = true
+//        }
+//    }
+//    
+//    func centerMapOnLocation(location:CLLocation) {
+//        
+//        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+//        mapView.setRegion(coordinateRegion, animated: true)
+//    }
     
-    func centerMapOnLocation(location:CLLocation) {
-        
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
     
-    
-    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        if let loc = userLocation.location {
-            if !maphasCenteredOnce {
-                centerMapOnLocation(location: loc)
-                maphasCenteredOnce = true
-            }
-        }
-    }
+//    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+//        if let loc = userLocation.location {
+//            if !maphasCenteredOnce {
+//                centerMapOnLocation(location: loc)
+//                maphasCenteredOnce = true
+//            }
+//        }
+//    }
     
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

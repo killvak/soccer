@@ -12,6 +12,7 @@
 		712C3BEF1E2CE421001BA561 /* TheFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C3BEE1E2CE421001BA561 /* TheFieldsViewController.swift */; };
 		712C3BF11E2CE548001BA561 /* TheFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C3BF01E2CE548001BA561 /* TheFieldTableViewCell.swift */; };
 		712C3BF31E2CEFCC001BA561 /* ExtTheFieldsViewControllerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C3BF21E2CEFCC001BA561 /* ExtTheFieldsViewControllerMapView.swift */; };
+		7148DBB61E35EEE80095833B /* AASquaresLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148DBB51E35EEE80095833B /* AASquaresLoading.swift */; };
 		715B892D1E2ADD10000804EA /* FieldsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B892C1E2ADD10000804EA /* FieldsMap.swift */; };
 		7162B71F1E263100003C3206 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B71E1E263100003C3206 /* PinAnnotation.swift */; };
 		7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162B7221E263DB3003C3206 /* MaterialView.swift */; };
@@ -24,6 +25,7 @@
 		7167285E1E2B96D100C32F59 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167285D1E2B96D100C32F59 /* SearchViewController.swift */; };
 		716728611E2B98E000C32F59 /* ExtRegisterDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716728601E2B98E000C32F59 /* ExtRegisterDatePicker.swift */; };
 		716728631E2BA8DD00C32F59 /* ExtPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716728621E2BA8DD00C32F59 /* ExtPickerViewVC.swift */; };
+		71A8D9D41E35F61900536C57 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8D9D31E35F61900536C57 /* WebViewVC.swift */; };
 		71B52C6D1E2778B600E2BFFA /* AukDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6A1E2778B600E2BFFA /* AukDistrib.swift */; };
 		71B52C6E1E2778B600E2BFFA /* ScrollViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6B1E2778B600E2BFFA /* ScrollViewEx.swift */; };
 		71B52C6F1E2778B600E2BFFA /* MoaDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B52C6C1E2778B600E2BFFA /* MoaDistrib.swift */; };
@@ -71,6 +73,7 @@
 		712C3BEE1E2CE421001BA561 /* TheFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheFieldsViewController.swift; sourceTree = "<group>"; };
 		712C3BF01E2CE548001BA561 /* TheFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheFieldTableViewCell.swift; sourceTree = "<group>"; };
 		712C3BF21E2CEFCC001BA561 /* ExtTheFieldsViewControllerMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtTheFieldsViewControllerMapView.swift; sourceTree = "<group>"; };
+		7148DBB51E35EEE80095833B /* AASquaresLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASquaresLoading.swift; sourceTree = "<group>"; };
 		715B892C1E2ADD10000804EA /* FieldsMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMap.swift; sourceTree = "<group>"; };
 		7162B71E1E263100003C3206 /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		7162B7221E263DB3003C3206 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		7167285D1E2B96D100C32F59 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		716728601E2B98E000C32F59 /* ExtRegisterDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtRegisterDatePicker.swift; sourceTree = "<group>"; };
 		716728621E2BA8DD00C32F59 /* ExtPickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtPickerViewVC.swift; path = ../ExtPickerViewVC.swift; sourceTree = "<group>"; };
+		71A8D9D31E35F61900536C57 /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		71B52C6A1E2778B600E2BFFA /* AukDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AukDistrib.swift; sourceTree = "<group>"; };
 		71B52C6B1E2778B600E2BFFA /* ScrollViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewEx.swift; sourceTree = "<group>"; };
 		71B52C6C1E2778B600E2BFFA /* MoaDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoaDistrib.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				7167285F1E2B98B600C32F59 /* Register */,
 				71F5FABD1E24E9BA00BD1F83 /* SigninViewController.swift */,
 				715B892C1E2ADD10000804EA /* FieldsMap.swift */,
+				71A8D9D31E35F61900536C57 /* WebViewVC.swift */,
 				712C3BED1E2CCAB0001BA561 /* Search */,
 				71B52C7B1E27814200E2BFFA /* HomePage */,
 				7162B72B1E265E9A003C3206 /* PlayFieldViewController */,
@@ -306,6 +311,7 @@
 		71F5FAD11E250DD800BD1F83 /* 3rd Part help */ = {
 			isa = PBXGroup;
 			children = (
+				7148DBB51E35EEE80095833B /* AASquaresLoading.swift */,
 				7167285B1E2B788000C32F59 /* sideMenuTableView.swift */,
 				7162B7221E263DB3003C3206 /* MaterialView.swift */,
 				71F5FABB1E24DC8000BD1F83 /* Extensions.swift */,
@@ -483,6 +489,7 @@
 				712C3BF31E2CEFCC001BA561 /* ExtTheFieldsViewControllerMapView.swift in Sources */,
 				71B52C931E27CF6E00E2BFFA /* MirroringLabel.swift in Sources */,
 				7167285C1E2B788000C32F59 /* sideMenuTableView.swift in Sources */,
+				7148DBB61E35EEE80095833B /* AASquaresLoading.swift in Sources */,
 				71B52C871E27A78600E2BFFA /* CitiesAndFieldsCollectionViewCell.swift in Sources */,
 				7162B7231E263DB3003C3206 /* MaterialView.swift in Sources */,
 				71F5FAA61E24C14000BD1F83 /* RegisterViewController.swift in Sources */,
@@ -501,6 +508,7 @@
 				71F5FAA41E24C14000BD1F83 /* AppDelegate.swift in Sources */,
 				716728631E2BA8DD00C32F59 /* ExtPickerViewVC.swift in Sources */,
 				71F5FAB61E24CD0800BD1F83 /* RegisterTextFieldDeledate.swift in Sources */,
+				71A8D9D41E35F61900536C57 /* WebViewVC.swift in Sources */,
 				7167285E1E2B96D100C32F59 /* SearchViewController.swift in Sources */,
 				71C4C0971E2E45E100504071 /* SearchFieldByDateTableViewCell.swift in Sources */,
 				7162B72F1E265EC7003C3206 /* CVPlayFieldViewController.swift in Sources */,

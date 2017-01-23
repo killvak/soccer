@@ -9,9 +9,9 @@
 import UIKit
 
 class RegisterViewController: UIViewController , UITextFieldDelegate {
-   
-
-
+    
+    
+    
     @IBOutlet weak var firstNameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var fieldsTypeViewHeight: NSLayoutConstraint!
     
     @IBOutlet weak var typeOfFieldsViewOL: UIView!
-    //set selection OutLets 
+    //set selection OutLets
     @IBOutlet weak var playerView: UIView!
     @IBOutlet weak var playerLbl: UILabel!
     @IBOutlet weak var playerImage: UIImageView!
@@ -32,7 +32,7 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var coachView: UIView!
     
     //
-  
+    
     let pinkColor = UIColor(colorLiteralRed: 221/255, green: 63/255, blue: 74/255, alpha: 1)
     let registerTFDelegate = RegisterTextFieldDeledate()
     var checkBoxIndexArray = [Int]()
@@ -41,6 +41,21 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        delegates()
+        setTypeOfFieldsViewLayout()
+        setIsownerOrPlayerViewLayout()
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func delegates() {
+        
         firstNameTF.delegate = registerTFDelegate
         emailTF.delegate = registerTFDelegate
         passwordTF.delegate = registerTFDelegate
@@ -49,20 +64,8 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
         birthDateTF.delegate = self
         cityTF.delegate = registerTFDelegate
         neighborTF.delegate = registerTFDelegate
-      setTypeOfFieldsViewLayout()
-        setIsownerOrPlayerViewLayout()
-        if !isFieldOwner {
-//            self.typeOfFieldsOL.isHidden = true
-        }
-
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterViewController.dismissKeyboard))
-        
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        
-        view.addGestureRecognizer(tap)
     }
-
+    
     func setTypeOfFieldsViewLayout() {
         self.typeOfFieldsViewOL.layer.cornerRadius  = 15
         self.typeOfFieldsViewOL.clipsToBounds = true
@@ -72,28 +75,62 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
     
     func setIsownerOrPlayerViewLayout() {
         let views = [ playerView,coachView]
+        let width = playerView.frame.size.width / 2
         for i in views {
-        i?.layer.cornerRadius  = 39
-        i?.clipsToBounds = true
-        i?.layer.borderWidth = 2.5
+            i?.layer.cornerRadius  = width
+            i?.clipsToBounds = true
+            i?.layer.borderWidth = 2.5
         }
-        self.playerView.layer.borderColor  = UIColor.white.cgColor
-        self.coachView.layer.borderColor = self.pinkColor.cgColor
-
-
+        
+        
+        ownerOrPlayer()
     }
     
+    func ownerOrPlayer() {
+        
+        if isFieldOwner {
+            self.playerView.layer.borderColor  = self.pinkColor.cgColor
+            
+            coachView.backgroundColor = self.pinkColor
+            coachLbl.textColor = UIColor.white
+            coachImage.image = UIImage(named : "white_Coach" )
+            coachView.layer.borderColor = UIColor.white.cgColor
+            
+            self.playerView.backgroundColor = UIColor.white
+            self.playerLbl.textColor =  self.pinkColor
+            self.playerImage.image = UIImage(named: "pin")
+            self.playerView.layer.borderColor = self.pinkColor.cgColor
+            self.typeOfFieldsViewOL.isHidden = false
+            self.fieldsTypeViewHeight.constant = 136
+            
+            
+        }else {
+            self.playerView.layer.borderColor  = UIColor.white.cgColor
+            self.playerView.layer.borderColor = self.pinkColor.cgColor
+            playerLbl.textColor = UIColor.white
+            playerImage.image = UIImage(named : "white_Player" )
+            playerView.backgroundColor = self.pinkColor
+
+            coachView.layer.borderColor = UIColor.white.cgColor
+            self.coachView.backgroundColor = UIColor.white
+            self.coachLbl.textColor = self.pinkColor
+            self.coachImage.image = UIImage(named: "Coach_d32437_100")
+            self.coachView.layer.borderColor = self.pinkColor.cgColor
+            self.fieldsTypeViewHeight.constant = 0
+            self.typeOfFieldsViewOL.isHidden = true
+        }
+    }
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
     
-
-
+    
+    
     func closekeyboard() {
         self.view.endEditing(true)
     }
-
+    
     
     func checktextValid()-> (String , Bool) {
         
@@ -142,7 +179,7 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
                             andButtons: nil)
         }else {
             let alert = FCAlertView(type: .warning)
-        
+            
             alert.showAlert(inView: self,
                             withTitle: "خطأ فى التسجيل",
                             withSubtitle: checker.0,
@@ -150,11 +187,11 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
                             withDoneButtonTitle: nil,
                             andButtons: nil)
         }
-
+        
     }
-
-    @IBAction func dismissViewButton(_ sender: UIButton) {
     
+    @IBAction func dismissViewButton(_ sender: UIButton) {
+        
         dismiss(animated:true,completion:nil)
     }
     
@@ -197,53 +234,46 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
             self.checkBoxIndexArray.remove(sender.tag)
         }
     }
-
+    
     
     @IBAction func ownerOrPlayerFieldBtnAct(_ sender: UIButton) {
-      
+        
         switch sender.tag {
         case 0:
-            playerOrOwner(sender: sender, theView: playerView, Lable: playerLbl,uiImage : playerImage , image : "white_Player")
-            self.coachView.backgroundColor = UIColor.white
-            self.coachLbl.textColor = self.pinkColor
-            self.coachImage.image = UIImage(named: "Coach_d32437_100")
-            self.coachView.layer.borderColor = self.pinkColor.cgColor
-            self.fieldsTypeViewHeight.constant = 0
-            self.typeOfFieldsViewOL.isHidden = true
-
+            isFieldOwner = false
+            
+//            playerOrOwner(sender: sender, theView: playerView, Lable: playerLbl,uiImage : playerImage , image : "white_Player")
+            
             break
         case 1:
-            playerOrOwner(sender: sender, theView: coachView, Lable: coachLbl,uiImage : coachImage , image : "white_Coach")
-            self.playerView.backgroundColor = UIColor.white
-            self.playerLbl.textColor =  self.pinkColor
-            self.playerImage.image = UIImage(named: "pin")
-            self.playerView.layer.borderColor = self.pinkColor.cgColor
-            self.typeOfFieldsViewOL.isHidden = false
-            self.fieldsTypeViewHeight.constant = 136
+            isFieldOwner = true
+            
+//            playerOrOwner(sender: sender, theView: coachView, Lable: coachLbl,uiImage : coachImage , image : "white_Coach")
             break
-
+            
         default:
             print("Unknown language")
             return
         }
+        ownerOrPlayer()
         print(self.checkBoxIndexArray)
     }
     
-    func playerOrOwner(sender : UIButton , theView : UIView ,Lable : UILabel, uiImage : UIImageView,image : String) {
-            theView.backgroundColor = self.pinkColor
-            Lable.textColor = UIColor.white
-            uiImage.image = UIImage(named : image )
-        theView.layer.borderColor = UIColor.white.cgColor
-
-      
-    }
-    
-    
-//    func checkTextCount(text : String?) -> ( String , Bool) {
-//        guard let x = text , x.characters.count >= 6 else {
-//            return ("" ,  false )
-//        }
-//        return ("" ,  true )
+//    func playerOrOwner(sender : UIButton , theView : UIView ,Lable : UILabel, uiImage : UIImageView,image : String) {
+//        theView.backgroundColor = self.pinkColor
+//        Lable.textColor = UIColor.white
+//        uiImage.image = UIImage(named : image )
+//        theView.layer.borderColor = UIColor.white.cgColor
+//        
+//        
 //    }
+    
+    
+    //    func checkTextCount(text : String?) -> ( String , Bool) {
+    //        guard let x = text , x.characters.count >= 6 else {
+    //            return ("" ,  false )
+    //        }
+    //        return ("" ,  true )
+    //    }
 }
 

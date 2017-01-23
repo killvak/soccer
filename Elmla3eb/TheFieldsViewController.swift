@@ -75,5 +75,11 @@ class TheFieldsViewController: UIViewController , UITableViewDelegate , UITableV
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func addFieldasownerBtnAct(_ sender: UIButton) {
+        
+        let x = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        
+        x.isFieldOwner = true 
+        navigationController?.pushViewController(x, animated: true)    }
 
 }
